@@ -1,0 +1,12 @@
+.top-row {
+  align-items: center;
+  display: flex;
+}
+
+.job-tags {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}

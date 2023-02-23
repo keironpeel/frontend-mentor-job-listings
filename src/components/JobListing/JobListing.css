@@ -1,0 +1,10 @@
+.job-listing {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.job-overview {
+  align-items: center;
+  display: flex;
+}
