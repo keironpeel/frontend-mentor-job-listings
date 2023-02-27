@@ -6,10 +6,10 @@ interface JobListingTagProps {
 }
 
 function JobListingTag({ title }: JobListingTagProps) {
-  const toggleFilterTag = useFilterTagsStore((state) => state.toggleFilterTag);
+  const addFilterTag = useFilterTagsStore((state) => state.addFilterTag);
 
   function handleClick() {
-    toggleFilterTag(title);
+    addFilterTag(title);
   }
 
   return (
