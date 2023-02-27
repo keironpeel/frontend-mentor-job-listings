@@ -1,0 +1,7 @@
+.filter-tag {
+  background-color: var(--primary-bg);
+  border-radius: 4px;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 4px 8px;
+}

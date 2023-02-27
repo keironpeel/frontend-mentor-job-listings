@@ -19,8 +19,12 @@ interface JobListingProps {
 }
 
 function JobListing(props: JobListingProps) {
+  const jobListingClasses = props.featured
+    ? "job-listing job-listing--featured"
+    : "job-listing";
+
   return (
-    <article className="job-listing">
+    <article className={jobListingClasses}>
       <div className="job-overview">
         <div>
           <img src={props.logo} alt={props.company} />

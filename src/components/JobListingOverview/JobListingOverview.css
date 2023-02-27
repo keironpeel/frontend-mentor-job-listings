@@ -1,12 +1,55 @@
+.job-overview-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 8px;
+}
+
 .top-row {
   align-items: center;
+  column-gap: 16px;
   display: flex;
 }
 
+.company-name {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.tag {
+  border-radius: 200px;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+.tag--new {
+  background-color: var(--primary);
+}
+
+.tag--featured {
+  background-color: var(--very-dark);
+}
+
+.position {
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .job-tags {
+  column-gap: 8px;
   display: flex;
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
+}
+
+.detail-row {
+  color: var(--dark);
 }

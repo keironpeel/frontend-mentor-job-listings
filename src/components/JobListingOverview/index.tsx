@@ -20,18 +20,18 @@ function JobListingOverview({
   location,
 }: JobListingOverviewProps) {
   return (
-    <div>
+    <div className="job-overview-details">
       <div className="top-row">
-        <p>{company}</p>
+        <p className="company-name">{company}</p>
         <ul className="job-tags">
-          {isNew && <li>New!</li>}
-          {featured && <li>Featured</li>}
+          {isNew && <li className="tag tag--new">New!</li>}
+          {featured && <li className="tag tag--featured">Featured</li>}
         </ul>
       </div>
       <div>
-        <h2>{position}</h2>
+        <h2 className="position">{position}</h2>
       </div>
-      <div>
+      <div className="detail-row">
         <span>{postedAt} ·</span>
         <span> {contract} ·</span>
         <span> {location}</span>

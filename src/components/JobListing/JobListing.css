@@ -1,10 +1,18 @@
 .job-listing {
   align-items: center;
+  background-color: white;
+  border-radius: 7px;
   display: flex;
   justify-content: space-between;
+  padding: 16px 32px;
+}
+
+.job-listing--featured {
+  border-left: 6px solid var(--primary);
 }
 
 .job-overview {
   align-items: center;
+  column-gap: 24px;
   display: flex;
 }

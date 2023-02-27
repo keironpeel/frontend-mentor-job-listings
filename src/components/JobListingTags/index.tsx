@@ -1,3 +1,6 @@
+import JobListingTag from "../JobListingTag";
+import "./JobListingTags.css";
+
 interface JobListingTagsProps {
   role: string;
   level: string;
@@ -13,14 +16,14 @@ function JobListingTags({
 }: JobListingTagsProps) {
   return (
     <div>
-      <ul>
-        <li>{role}</li>
-        <li>{level}</li>
+      <ul className="filter-tags">
+        <JobListingTag title={role} />
+        <JobListingTag title={level} />
         {languages.map((language, index) => (
-          <li key={index}>{language}</li>
+          <JobListingTag key={index} title={language} />
         ))}
         {tools.map((tool, index) => (
-          <li key={index}>{tool}</li>
+          <JobListingTag key={index} title={tool} />
         ))}
       </ul>
     </div>
