@@ -17,13 +17,13 @@ function JobListingTags({
   return (
     <div>
       <ul className="filter-tags">
-        <JobListingTag title={role} />
-        <JobListingTag title={level} />
+        <JobListingTag title={role} addTag={true} />
+        <JobListingTag title={level} addTag={true} />
         {languages.map((language, index) => (
-          <JobListingTag key={index} title={language} />
+          <JobListingTag key={index} title={language} addTag={true} />
         ))}
         {tools.map((tool, index) => (
-          <JobListingTag key={index} title={tool} />
+          <JobListingTag key={index} title={tool} addTag={true} />
         ))}
       </ul>
     </div>

@@ -3,5 +3,15 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
+  min-height: 79.5px;
   padding: 16px 32px;
+}
+
+.filter__tags ul {
+  column-gap: 12px;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }

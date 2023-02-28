@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="app">
-      {filterTags.length > 0 && <Filter />}
+      <Filter />
       <div className="listings">
         {listings.map((listing) => (
           <JobListing key={listing.id} {...listing} />

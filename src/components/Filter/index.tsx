@@ -1,4 +1,5 @@
 import useFilterTagsStore from "../../store/filterTags";
+import JobListingTag from "../JobListingTag";
 import "./Filter.css";
 
 function Filter() {
@@ -8,11 +9,15 @@ function Filter() {
   return (
     <div className="filter">
       <div className="filter__tags">
-        <ul>
-          {filterTags.map((tag, index) => (
-            <li key={index}>{tag}</li>
-          ))}
-        </ul>
+        {filterTags.length > 0 ? (
+          <ul>
+            {filterTags.map((tag, index) => (
+              <JobListingTag key={index} title={tag} addTag={false} />
+            ))}
+          </ul>
+        ) : (
+          <p>Click on a tag to filter the results.</p>
+        )}
       </div>
       <div className="filter__actions">
         <button onClick={clearFilterTags}>Clear</button>
